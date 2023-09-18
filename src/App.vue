@@ -1,16 +1,16 @@
 <template>
   <div class="container mx-auto">
-    <ChatBox />
+    <ChatBot />
   </div>
 </template>
 
 <script>
-import ChatBox from './components/ChatBox.vue';
+import ChatBot from './components/ChatBot.vue';
 
 export default {
   name: 'App',
   components: {
-    ChatBox,
+    ChatBot,
   },
 };
 </script>
