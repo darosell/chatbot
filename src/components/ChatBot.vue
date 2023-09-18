@@ -69,7 +69,7 @@ export default {
         options: ''
       });
       await axios
-        .post('https://typical-verdant-leotard.glitch.me/sendSelection', {
+        .post('https://prueba1234.glitch.me/sendSelection', {
           respuesta: optionNumber,
         })
         .then((response) => {
@@ -93,7 +93,7 @@ export default {
   },
 
   mounted() {
-    axios.get('https://typical-verdant-leotard.glitch.me/getData', {
+    axios.get('https://prueba1234.glitch.me/getData', {
       // respuesta: message,
     })
       .then((response) => {
