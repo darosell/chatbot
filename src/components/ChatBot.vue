@@ -69,7 +69,7 @@ export default {
         options: ''
       });
       await axios
-        .post('https://inky-bronzed-kite.glitch.me/sendSelection', {
+        .post('https://strengthened-honey-bestseller.glitch.me/sendSelection', {
           respuesta: optionNumber,
         })
         .then((response) => {
@@ -93,7 +93,7 @@ export default {
   },
 
   mounted() {
-    axios.get('https://inky-bronzed-kite.glitch.me/getData', {
+    axios.get('https://strengthened-honey-bestseller.glitch.me/getData', {
       // respuesta: message,
     })
       .then((response) => {
