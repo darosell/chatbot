@@ -14,13 +14,22 @@
         </div> -->
             </div>
           </div>
-        </template>
+
+         </template> 
+            <div id="opcionesChatContenedor">
+              <div  id="opcionesChat" v-for="(option, j) in buttons" :key="j">
+                <button class="btn secondary" @click="sendMessage(j, option)">{{ option }}</button>
+              </div>
+            </div>
+            
+            
+        
       </div>
-      <div class="inputContainer">
+      <!-- <div class="inputContainer">
         <div v-for="(option, j) in buttons" :key="j">
           <button class="btn secondary" @click="sendMessage(j, option)">{{ option }}</button>
         </div>
-      </div>
+      </div> -->
       <!-- <div class="inputContainer">
   <input
     v-model="currentMessage"
@@ -112,16 +121,20 @@ export default {
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap');
 
 .chatbox-container {
-  position: fixed;
+  /* position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 1000;
+  z-index: 1000; */
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
 }
 
 .container {
-  width: 360px;
-  height: 600px;
+  width: 100%;
+  height: 100vh;
   background-color: white;
   border-radius: 8px;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
@@ -163,7 +176,7 @@ h1 {
 
 .secondary {
   background-color: white;
-  border: 2px solid #e7e7e7;
+  border: 2px solid #e7e7e7;          
 }
 
 .secondary:hover {
@@ -186,10 +199,10 @@ h1 {
 
 .messageFromUser,
 .messageFromChat {
-  display: flex;
+  /* display: flex; */
+  display: contents;
+  text-align: center;
 }
-
-
 
 .messageBox {
   max-height: 400px;
@@ -202,7 +215,8 @@ h1 {
 
 .messageFromUser,
 .messageFromChat {
-  display: flex;
+  /* display: flex; */
+  padding-right: 0%;
   margin-bottom: 8px;
 }
 
@@ -222,7 +236,7 @@ h1 {
 
 .userMessageContent,
 .chatMessageContent {
-  max-width: 60%;
+  max-width: 100%;
   padding: 8px 12px;
   border-radius: 18px;
   margin-bottom: 2px;
@@ -233,13 +247,13 @@ h1 {
 .userMessageContent {
   background-color: #1877F2;
   color: white;
-  border-top-left-radius: 0;
+  border-top-right-radius: 0;
 }
 
 .chatMessageContent {
   background-color: #EDEDED;
   color: #222;
-  border-top-right-radius: 0;
+  border-top-left-radius: 0;
 }
 
 .userMessageTimestamp,
@@ -264,6 +278,8 @@ h1 {
   padding: 10px;
   background-color: #f0f0f0;
   flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
   /* min-height: 90px; */
 }
 
@@ -312,7 +328,9 @@ h1 {
 
 
 .messageBox {
-  padding: 16px;
+  padding-top: 16px;
+  padding-left: 25%;
+  padding-right: 25%;
   flex-grow: 1;
   overflow-y: auto;
   display: flex;
@@ -320,7 +338,29 @@ h1 {
   gap: 12px;
 }
 
-.messageFromUser,
+/* .messageFromUser
 .messageFromChat {
   display: flex;
-}</style>
+} */
+
+#opcionesChatContenedor{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  background-color: #EDEDED;
+  /* color: #222; */
+  border-radius: 18px;
+  border-top-left-radius: 0;
+  padding-block: 8px;
+  padding-inline: 10px;
+  margin-bottom: 2px;
+  line-height: 1.4;
+}
+
+/* #opcionesChat{
+  padding: 8px, 12px;
+  margin-bottom: 2px;
+  line-height: 1.4;
+} */
+</style>
