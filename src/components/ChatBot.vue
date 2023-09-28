@@ -311,14 +311,6 @@ h1 {
   background-color: #145CB3;
 }
 
-@media (max-width: 480px) {
-  .container {
-    width: 100%;
-    max-width: none;
-    border-radius: 0;
-  }
-}
-
 .chatbox-container {
   position: fixed;
   /* bottom: 24px;
@@ -363,4 +355,69 @@ h1 {
   margin-bottom: 2px;
   line-height: 1.4;
 } */
+
+@media (min-width: 0) {
+  /* .container {
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+  } */
+  .messageBox {
+    padding-top: 16px;
+    padding-left: 3%;
+    padding-right: 3%;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* background-color: red; */
+  }
+}
+
+@media (min-width: 320) {
+  .messageBox {
+    padding-top: 16px;
+    padding-left: 10%;
+    padding-right: 10%;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* background-color: blue; */
+  }
+  
+}
+
+@media (min-width: 768px) {
+
+  .messageBox {
+    padding-top: 16px;
+    padding-left: 15%;
+    padding-right: 15%;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* background-color: green; */
+  }
+}
+
+@media (min-width: 1024px) {
+
+  .messageBox {
+    padding-top: 16px;
+    padding-left: 25%;
+    padding-right: 25%;
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    /* background-color: yellow; */
+  }
+}
+
 </style>
