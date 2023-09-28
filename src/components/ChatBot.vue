@@ -373,6 +373,12 @@ h1 {
     gap: 12px;
     /* background-color: red; */
   }
+
+  .secondary:hover {
+  background-color: white;
+  color: black;
+  border: 2px solid #e7e7e7;          
+  }
 }
 
 @media (min-width: 320) {
