@@ -205,7 +205,7 @@ h1 {
 }
 
 .messageBox {
-  max-height: 400px;
+  max-height: 80vh;
   overflow-y: auto;
   padding: 0 16px;
   border-top: 1px solid #f0f0f0;
@@ -347,8 +347,8 @@ h1 {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
-  background-color: #EDEDED;
+  justify-content: left;
+  /* background-color: #EDEDED; */
   /* color: #222; */
   border-radius: 18px;
   border-top-left-radius: 0;
